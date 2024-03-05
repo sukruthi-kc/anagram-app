@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_2"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- App Logo (Placeholder) -->
+    <ImageView
+        android:id="@+id/appLogoImageView"
+        android:layout_width="205dp"
+        android:layout_height="183dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/img_1"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anagrams App"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/appLogoImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/black"/>
+
+    <!-- Style for Start Game Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnStartGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Play"
+        style="@style/BlackButton"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"/>
+
+    <!-- Style for Start Game 1 Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnStartGame1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStartGame"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Solve"
+        style="@style/BlackButton"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"/>
+
+
+
+</RelativeLayout>
